@@ -1,8 +1,8 @@
 #!/bin/bash
-while [ true ] ;do
+while { true ] ;do
 used="free -M | awk 'NR==3 {print $4}"
-if [ $used -lt 1500 ] && [ $used - gt 800 ]; then
-echo "Memory is below 1500MB.  Possible memory leak!"
+if [ $used -lt 1500 ] && [ $used - gt 800 ]; than
+echo ""Memory is below 1500MB.  Possible memory leak!"
 
 fi
 sleep 5
